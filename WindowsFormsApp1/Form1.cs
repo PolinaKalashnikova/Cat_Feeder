@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        private loginForm lgnForm;
+        private AdminLoginForm lgnForm;
         public Form1()
         {
             InitializeComponent();
@@ -20,19 +22,48 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            User_Form User_Form = new User_Form();
-            User_Form.Show();
+            UserLoginForm User_Login_Form = new UserLoginForm();
+
+
+            User_Login_Form.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-             lgnForm = new loginForm(this);
-            lgnForm.Show();
-            this.Hide();
+            AdminLoginForm lgnForm = new AdminLoginForm(this);
+
+            string login = "admin";
+            if (textBox2.Text == login)
+            {
+                lgnForm.Show();
+                this.Hide();
+            }
+            else MessageBox.Show("Не верный логин");
+
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
         {
 
         }
