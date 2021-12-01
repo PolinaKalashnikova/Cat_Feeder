@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class Get_infoForm
+    partial class GetInfoForm
     {
         /// <summary>
         /// Required designer variable.

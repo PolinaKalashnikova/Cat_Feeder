@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class User_Form
+    partial class UserForm
     {
         /// <summary>
         /// Required designer variable.
@@ -96,7 +96,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "User_Form";
+            this.Name = "UserForm";
             this.Text = "User_Form";
             this.ResumeLayout(false);
 

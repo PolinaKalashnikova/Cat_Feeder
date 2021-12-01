@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -70,6 +73,7 @@
     <Compile Include="Check_the_scheduleForm.Designer.cs">
       <DependentUpon>Check_the_scheduleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Feeder.cs" />
     <Compile Include="feeder_controlForm.cs">
       <SubType>Form</SubType>
     </Compile>

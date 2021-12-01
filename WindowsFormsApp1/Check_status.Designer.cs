@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class Check_status
+    partial class CheckStatus
     {
         /// <summary>
         /// Required designer variable.

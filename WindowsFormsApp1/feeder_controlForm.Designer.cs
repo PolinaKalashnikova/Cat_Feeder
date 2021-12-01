@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class feeder_controlForm
+    partial class FeederControlForm
     {
         /// <summary>
         /// Required designer variable.
@@ -79,7 +79,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "feeder_controlForm";
+            this.Name = "FeederControlForm";
             this.Text = "Create_scheduleForm";
             this.ResumeLayout(false);
             this.PerformLayout();

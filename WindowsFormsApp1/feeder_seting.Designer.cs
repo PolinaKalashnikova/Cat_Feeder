@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class feeder_seting
+    partial class FeederSeting
     {
         /// <summary>
         /// Required designer variable.
@@ -115,7 +115,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "feeder_seting";
+            this.Name = "FeederSeting";
             this.Text = "feeder_seting";
             this.ResumeLayout(false);
 

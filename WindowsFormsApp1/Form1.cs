@@ -1,20 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        private AdminLoginForm lgnForm;
+        private AdminLoginForm _lgnForm;
         public Form1()
         {
             InitializeComponent();
@@ -22,10 +14,10 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UserLoginForm User_Login_Form = new UserLoginForm();
+            UserLoginForm userLoginForm = new UserLoginForm();
 
 
-            User_Login_Form.Show();
+            userLoginForm.Show();
             this.Hide();
         }
 
@@ -33,7 +25,7 @@ namespace WindowsFormsApp1
         {
             AdminLoginForm lgnForm = new AdminLoginForm(this);
 
-            string login = "admin";
+            const string login = "admin";
             if (textBox2.Text == login)
             {
                 lgnForm.Show();

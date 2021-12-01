@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class Change_scheduleForm
+    partial class ChangeScheduleForm
     {
         /// <summary>
         /// Required designer variable.

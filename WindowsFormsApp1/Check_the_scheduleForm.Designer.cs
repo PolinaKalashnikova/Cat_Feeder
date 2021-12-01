@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class Check_the_scheduleForm
+    partial class CheckTheScheduleForm
     {
         /// <summary>
         /// Required designer variable.

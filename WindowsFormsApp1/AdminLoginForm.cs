@@ -1,21 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
     public partial class AdminLoginForm : Form
     {
-        private Form1 previousForm;
+        public Form1 PreviousForm { get; }
+
         public AdminLoginForm(Form1 prevform)
         {
-            previousForm = prevform;
+            PreviousForm = prevform;
             InitializeComponent();
         }
 
@@ -26,16 +20,16 @@ namespace WindowsFormsApp1
 
         private void loginForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            previousForm.Show();
+            PreviousForm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            adminForm AdminForm = new adminForm();
+            AdminForm adminForm = new AdminForm();
             string pass = "catfeeder";
             if (textBox2.Text == pass)
             {
-                AdminForm.Show();
+                adminForm.Show();
                 this.Hide();
             }
             else MessageBox.Show("Не верный пароль");

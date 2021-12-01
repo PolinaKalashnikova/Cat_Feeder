@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class Create_userForm
+    partial class CreateUserForm
     {
         /// <summary>
         /// Required designer variable.
@@ -35,28 +35,32 @@ namespace WindowsFormsApp1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(291, 229);
+            this.button1.Location = new System.Drawing.Point(327, 286);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 43);
+            this.button1.Size = new System.Drawing.Size(191, 54);
             this.button1.TabIndex = 0;
             this.button1.Text = "create";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(291, 169);
+            this.textBox1.Location = new System.Drawing.Point(327, 211);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 22);
+            this.textBox1.Size = new System.Drawing.Size(191, 26);
             this.textBox1.TabIndex = 1;
             // 
-            // Create_userForm
+            // CreateUserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 562);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Name = "Create_userForm";
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "CreateUserForm";
             this.Text = "Create_userForm";
             this.Load += new System.EventHandler(this.Create_userForm_Load);
             this.ResumeLayout(false);

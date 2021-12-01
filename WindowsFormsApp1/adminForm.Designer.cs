@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class adminForm
+    partial class AdminForm
     {
         /// <summary>
         /// Required designer variable.
@@ -103,7 +103,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.check_the_status);
             this.Controls.Add(this.add_feeder);
             this.Controls.Add(this.Create_user);
-            this.Name = "adminForm";
+            this.Name = "AdminForm";
             this.Text = "adminForm";
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
             this.ResumeLayout(false);
